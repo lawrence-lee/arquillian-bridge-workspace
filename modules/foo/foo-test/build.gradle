@@ -1,0 +1,7 @@
+dependencies {
+	testIntegrationCompile group: "com.liferay", name: "com.liferay.arquillian.extension.junit.bridge", version: "1.0.17"
+	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.kernel", version: "4.4.0"
+	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test.integration", version: "6.0.7"
+	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test", version: "6.0.7"
+	testIntegrationCompile group: "junit", name: "junit", version: "4.12"
+}
