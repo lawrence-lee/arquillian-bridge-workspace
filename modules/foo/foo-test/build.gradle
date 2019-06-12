@@ -1,8 +1,19 @@
 dependencies {
 	testIntegrationCompile group: "com.liferay", name: "com.liferay.arquillian.extension.junit.bridge", version: "1.0.17"
 	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.kernel", version: "4.4.0"
+	
+	testIntegrationCompile group: "junit", name: "junit", version: "4.12"
+	
+	testIntegrationCompile project(":modules:foo:foo-api")
+
+	//we should add the following to be imported by test integration plugin since they are needed by LiferayIntegrationTestRule.
+	// in liferay-portal the gradle wrapper adds them
 	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test.integration", version: "6.0.7"
 	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test", version: "6.0.7"
-	testIntegrationCompile group: "junit", name: "junit", version: "4.12"
-	testIntegrationCompile project(":modules:foo:foo-api")
+	testIntegrationCompile group: "javax.servlet", name: "javax.servlet-api", version: "3.0.1"
+	testIntegrationCompile group: "log4j", name: "log4j", version: "1.2.17"
+	testIntegrationCompile group: "org.springframework", name: "spring-core", version: "4.3.22.RELEASE"
+	testIntegrationCompile group: "com.liferay", name: "com.liferay.petra.string", version: "3.0.0"
+	testIntegrationCompile group: "org.slf4j", name: "slf4j-api", version: "1.7.2"
+	
 }

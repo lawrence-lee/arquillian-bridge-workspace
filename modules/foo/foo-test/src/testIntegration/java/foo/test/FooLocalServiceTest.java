@@ -52,7 +52,7 @@ public class FooLocalServiceTest {
 
 	private static final Log _log = LogFactoryUtil.getLog(FooLocalServiceTest.class);
 
-	@Inject
+	@Inject//acts like @Reference but for tests
 	private FooLocalService _fooLocalService;
 
 }
