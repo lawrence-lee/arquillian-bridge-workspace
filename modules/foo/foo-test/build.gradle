@@ -4,4 +4,5 @@ dependencies {
 	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test.integration", version: "6.0.7"
 	testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test", version: "6.0.7"
 	testIntegrationCompile group: "junit", name: "junit", version: "4.12"
+	testIntegrationCompile project(":modules:foo:foo-api")
 }
